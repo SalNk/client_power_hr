@@ -81,7 +81,7 @@
                                 </a>
                             </div>
                             <div class="shrink-0">
-                                <x-language />
+                                {{-- <x-language /> --}}
                             </div>
                         </div>
                         <div class="mt-auto">

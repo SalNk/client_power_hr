@@ -10,21 +10,21 @@
                     class="items-center justify-center hidden px-5 text-center h-header group-data-[layout=horizontal]:md:flex group-data-[layout=horizontal]:ltr::pl-0 group-data-[layout=horizontal]:rtl:pr-0">
                     <a href="{{ route('dashboard') }}">
                         <span class="hidden">
-                            <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" class="h-6 mx-auto">
+                            <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" class="h-16 mx-auto">
                         </span>
                         <span class="group-data-[topbar=dark]:hidden group-data-[topbar=brand]:hidden">
                             <img src="{{ URL::asset('build/images/logo-dark.png') }}" alt=""
-                                class="h-6 mx-auto">
+                                class="h-16 mx-auto">
                         </span>
                     </a>
                     <a href="{{ route('dashboard') }}"
                         class="hidden group-data-[topbar=dark]:block group-data-[topbar=brand]:block">
                         <span class="group-data-[topbar=dark]:hidden group-data-[topbar=brand]:hidden">
-                            <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" class="h-6 mx-auto">
+                            <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" class="h-16 mx-auto">
                         </span>
                         <span class="group-data-[topbar=dark]:block group-data-[topbar=brand]:block">
                             <img src="{{ URL::asset('build/images/logo-light.png') }}" alt=""
-                                class="h-6 mx-auto">
+                                class="h-16 mx-auto">
                         </span>
                     </a>
                 </div>
@@ -42,13 +42,13 @@
                             class="inline-flex justify-center items-center p-0 text-topbar-item transition-all w-[37.5px] h-[37.5px] duration-200 ease-linear bg-topbar rounded-md dropdown-toggle btn hover:bg-topbar-item-bg-hover hover:text-topbar-item-hover group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:hover:bg-topbar-item-bg-hover-dark group-data-[topbar=dark]:hover:text-topbar-item-hover-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:hover:bg-topbar-item-bg-hover-brand group-data-[topbar=brand]:hover:text-topbar-item-hover-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:hover:bg-zink-600 group-data-[topbar=dark]:dark:text-zink-500 group-data-[topbar=dark]:dark:hover:text-zink-50"
                             id="flagsDropdown" data-bs-toggle="dropdown">
                             @switch(Session::get('lang'))
-                                @case('fr')
-                                    <img src="{{ URL::asset('build/images/flags/20/fr.svg') }}" alt=""
+                                @case('en')
+                                    <img src="{{ URL::asset('build/images/flags/20/us.svg') }}" alt=""
                                         id="header-lang-img" class="h-5 rounded-sm">
                                 @break
 
                                 @default
-                                    <img src="{{ URL::asset('build/images/flags/20/us.svg') }}" alt=""
+                                    <img src="{{ URL::asset('build/images/flags/20/fr.svg') }}" alt=""
                                         id="header-lang-img" class="h-5 rounded-sm">
                             @endswitch
                         </button>
